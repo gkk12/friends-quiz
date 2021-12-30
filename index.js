@@ -1,11 +1,11 @@
 var readlineSync = require("readline-sync");
 questionOne = {
-  question: "Who is my favorite superhero?",
+  question: "Who is my favorite superhero? ",
   answer: "Ironman"
 }
 
 questionTwo = {
-  question: "Which is my favorite song?",
+  question: "Which is my favorite song? ",
   answer: "Stay"
 }
 
@@ -33,7 +33,7 @@ function checkCorrectness(questionToAsk,answer)
   }
   else
   {
-    console.log("You are wrong");
+    console.log("You are wrong. It is "+answer);
   }
   console.log("Score is: "+score);
 }
@@ -71,7 +71,7 @@ function checkIfHighScoreBeaten(topScore,currentScore)
 
 if(score>=highestScore)
 {
-  console.log("Congrats, you have beaten the highest score. Kindly send a screenshot of the same to the admin");
+  console.log("Congrats, you have equalled the highest score. Kindly send a screenshot of the same to the admin");
 }
 
 
